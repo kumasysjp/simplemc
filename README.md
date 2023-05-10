@@ -10,7 +10,40 @@ provided by Mitsubishi that allows communication between a PC and a MELSEC PLC Q
 
 ## 機能
 
-- a
+-
+Use “SimpleMC” | How to use C# on MELSEC Q PLC ?
+.NET DLL to access MELSEC PLC. You can make communicate with one via the C#, VB.NET by using this.  Function e.g : WriteDeviceBlock2, ReadDeviceBlock2 ( Like MX Component)    
+
+ダウンロード
+ 
+
+マニュアル
+ 
+
+( ver.1.0, 20230502 , zip ,   更新履歴)  
+
+ 
+
+動作環境
+【 動作 SDK 】Visual Studio 2013,  2019 【動作環境】 Windows 10 (64bit) 【必要な環境※】.NET 4.5.1 互換Runtime (.NET)  
+
+ 
+
+機能( SimpleMC.dll)
+三菱MELSEC PLC Q にVB.NET, C# でアクセスできる MCプロトコル通信ライブラリです。
+
+- Ethernet(3E),  シリアルは RS-232C(形式2-5) の通信が可能
+- Ethernet においてはバイナリ/ASCII 選択可 ( シリアルはプロトコル仕様上、固定）
+- タイムアウト設定ができる
+- ランダム読み書き、ビット単位読み書き、ダブルワード単位読み書きも可能 (※1)
+- MELSECNET や シリアルユニットを介したネットワーク構成にも対応 (※2)
+  
+  
+  ※1.  WriteDeviceBlock2, ReadDeviceBlock2,WriteDeviceBlock2DWord, ReadDeviceBlock2DWord,WriteDeviceBlock2BIT, ReadDeviceBlock2BIT,WriteDeviceBlock2ArrayBit, ReadDeviceBlock2ArrayBit,WriteDeviceRandom2, ReadDeviceRandom2,WriteRandomBlock2,の関数を実装 
+  
+  ※2. プロパティのうち, MX Component のそれに相当するのは, ActHostAddress,ActPortNumber,ActSourceUnitNumber,ActCOMPort,ActBaudRate,ActDatabits,ActStopbits,ActParity, ActDtrEnable,ActRtsEnable,ActHandShake,ActSourceStation,ActSourceUnitNumber,ActNetworkNumber,ActUnitNumber,ActIONumber,ActConnectUnitNumber,ActCPUTimeOut  
+
+ 
 
 ## 利用方法
 
