@@ -1,0 +1,684 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SimpleMC
+</name>
+</assembly>
+<members>
+<member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.ENQ">
+	<summary>
+形式2,4で使う ENQ
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.STX">
+	<summary>
+形式2,3,4,5で使う STX (binary, ASCII共通で1byte)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.ACK">
+	<summary>
+形式2,4で使う ACK
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.NAK">
+	<summary>
+形式2,4で使う NAK
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.ETX">
+	<summary>
+形式2,3,4,5で使う ETX (binary, ASCII共通で1byte)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.CR">
+	<summary>
+形式4で使う CR 
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.LF">
+	<summary>
+形式4で使う LF
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.DLE">
+	<summary>
+形式5で使う DLE
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.ﾌ識A">
+	<summary>
+形式2,3,4 フレーム識別(ASCII)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.ﾌ識b">
+	<summary>
+形式5フレーム識別(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.RSﾌﾞ">
+	<summary>
+形式2で使うブロック(ASCII)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.RSｴﾗA">
+	<summary>
+形式2,3,4 エラーコード(ASCII)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.RSｴﾗb">
+	<summary>
+形式5 エラーコード(Binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.形3終">
+	<summary>
+形式3 終了コード(ASCII)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.形5終">
+	<summary>
+形式5 正常終了コード(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.形5応識">
+	<summary>
+形式5 応答識別コード(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.形5ﾊﾞｲﾄ">
+	<summary>
+形式5 データバイト数(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.固定b">
+	<summary>
+Etherサブヘッダ(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.固定A">
+	<summary>
+Etherサブヘッダ(ASCII)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.ｼﾘｱﾙb">
+	<summary>
+4Eフレーム シリアル(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.ｼﾘｱﾙA">
+	<summary>
+4Eフレーム シリアル(ASCII)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.空b">
+	<summary>
+4Eフレーム 空(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.空A">
+	<summary>
+4Eフレーム 空(ASCII)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.Ether応答bytesB">
+	<summary>
+Ether応答データ長(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.Ether応答bytesA">
+	<summary>
+Ether応答データ長(ASCII)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.Ether終了b">
+	<summary>
+Ether終了コード(binary)
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ComKernel.Enumbts.Ether終了A">
+	<summary>
+Ether終了コード(ASCII)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.SumCheckRS232C">
+	<summary>
+  RS232C通信においてサムチェックの実施の可否(初期値=False)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.TimeOutMessageDisplay">
+	<summary>
+  タイムアウト時メッセージ表示可否の設定(初期値=True)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.TimeOutMessage">
+	<summary>
+  タイムアウト時メッセージ内容(初期値=タイムアウトしました)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.TIMEOUT">
+	<summary>
+  通信タイムアウト時間 10msec単位指定(初期値は3000msec)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.二重化マルチCPU種別">
+	<summary>
+  二重化マルチCPU種別設定プロパティです。通信対象がマルチCPUである場合設定してください。通信パラメタを直接設定しない場合、設定が必要です。
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.対象局局番">
+	<summary>
+  対象局局番(RS232C)設定プロパティ
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.対象局PC番号">
+	<summary>
+ 対象局PC番号設定プロパティ
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.中継局PC番号">
+	<summary>
+ 中継局PC番号設定プロパティ
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.対象局ネットワーク番号">
+	<summary>
+ 対象局ネットワーク番号設定プロパティ
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.中継局ネットワーク番号">
+	<summary>
+ 中継局ネットワーク番号設定プロパティ
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.中継局要求先局番">
+	<summary>
+ 中継局要求先局番設定プロパティ
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.中継局要求先IO番号">
+	<summary>
+ 中継局要求先IO番号設定プロパティ
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.PLC構成">
+	<summary>
+ PLC構成設定設定プロパティ(初期値はシングルCPU単一ネットワーク内)。通信対象のPLCネットワーク構成を設定してください。通信パラメタを直接設定しない場合、設定が必要です。
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.MCProtocol">
+	<summary>
+ MCプロトコルプロパティ(初期値はフレーム3E)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.CFrame">
+	<summary>
+ CFrameプロパティ。RS232C通信においてフレームを選択してください。
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.QiQ">
+	<summary>
+QiQプロパティ(初期値Q)。使用するMELSEC PLCのQ Series, iQ Seriesいずれか使用しているか選択してください。
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.BinaryASCII">
+	<summary>
+ BinaryASCIIプロパティの選択候補（列挙体）。Etherまたはシリアルの形式5のときにASCIIかバイナリか選択します。
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActSourceStation">
+	<summary>
+  【通信パラメタ】ActSourceStationプロパティ(自局. RS232C用パラメタ. 初期値は0)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActSourceUnitNumber">
+	<summary>
+  【通信パラメタ】ActSourceUnitNumberプロパティ(局番. RS232C用パラメタ. 初期値は0)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActNetworkNumber">
+	<summary>
+  【通信パラメタ】ActNetworkNumberプロパティ(ネットワーク番号. 初期値は0)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActUnitNumber">
+	<summary>
+ 【通信パラメタ】ActUnitNumberプロパティ(PC番号.初期値は0xFF)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActIONumber">
+	<summary>
+ 【通信パラメタ】ActIONumber設定プロパティ(IO番号.初期値は0x03FF)
+■相手(PLC)とサーバ(通信ユニット)がバス接続, またはネットワーク経由(CC-Link IE, MELSECNET, Ethernet)の場合は
+シングルCPU 03ff
+マルチCPUの場合,,  管理CPUはH03FF
+１号機から4号機まで H03E0からH03E3
+二重化の場合,制御系03ED,待機系H03D1, A系H03D2, B系H03D3
+CC-Link IEで接続されたリモートヘッド(CPU)
+1号機H03E0,2号機H03E1, 制御系H03D0, 待機H03D1になります。
+■相手(PLC)とサーバ(通信ユニット)がシリアルまたはCC-Link経由接続の場合は,
+経由ユニットの設定I/Oアドレスになります。
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActConnectUnitNumber">
+	<summary>
+  【通信パラメタ】ActConnectUnitNumberプロパティ(要求先局番.初期値は0x00)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActHostAddress">
+	<summary>
+  【通信パラメタ】ActHostAddressプロパティ(EthernetユニットのIPアドレス. 初期値192.168.1.11)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActPortNumber">
+	<summary>
+ 【通信パラメタ】ActPortNumberプロパティ(EthernetユニットのPort番号. 初期値2000)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActCPUTimeOut">
+	<summary>
+ 【通信パラメタ】ActCPUTimeoutプロパティ(CPU監視タイマ. 初期値0x1000)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActCOMPort">
+	<summary>
+  【通信パラメタ】ActCOMPortプロパティ(RS232CのCOMポート.初期値はCOM1)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActBaudRate">
+	<summary>
+  【通信パラメタ】ActBaudRateプロパティ(RS232Cのボーレート. 初期値は19200bps)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActDatabits">
+	<summary>
+  【通信パラメタ】ActDatabitsプロパティ(RS232Cのデータビット. 初期値はbit7)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActStopbits">
+	<summary>
+  【通信パラメタ】ActStopbitsプロパティ(RS232Cのストップビット. 初期値はOne)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActParity">
+	<summary>
+  【通信パラメタ】ActParityプロパティ(RS232CのParity. 初期値はEven偶数)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActDtrEnable">
+	<summary>
+  【通信パラメタ】ActDtrEnableプロパティ(RS232CのDtrEnable)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActRtsEnable">
+	<summary>
+  【通信パラメタ】ActRtsEnableプロパティ(RS232CのRtsEnable)
+ </summary>
+</member><member name="P:SimpleMC.UserSetParameter.ActHandShake">
+	<summary>
+  【通信パラメタ】ActHandShakeプロパティ(RS232Cポートの設定にあわせてください)
+ </summary>
+</member><member name="T:SimpleMC.SimpleMC.EnumHEXDEC">
+	<summary>
+  DECかHEXか
+ </summary>
+</member><member name="T:SimpleMC.SimpleMC.EnumBITWORD">
+	<summary>
+  BITかWORDか
+ </summary>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceRandom2(System.Int32,System.Object[0:,0:])">
+	<summary>
+ ワード単位のランダム一括書込み関数です。
+ </summary>
+	<param name="k">書込み指定点数</param>
+	<param name="a">n行2列のObject配列("D0"などデバイス名、123など数値がそれぞれ各列に入った)</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceRandom2(System.Int32,System.Object[])">
+	<summary>
+ ワード単位のランダム一括書込み関数です。
+ </summary>
+	<param name="k">書込み指定点数</param>
+	<param name="inp">"D0",1423,"D123",6363....といった形式で指定してください(可変個数引数)</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceRandom2DWord(System.Int32,System.Object[0:,0:])">
+	<summary>
+ ダブルワード単位のランダム一括書込み関数です。
+ </summary>
+	<param name="k">書込み指定点数</param>
+	<param name="a">n行2列のObject配列("D0"などデバイス名、123など数値がそれぞれ各列に入った)</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceRandom2DWord(System.Int32,System.Object[])">
+	<summary>
+ ダブルワード単位のランダム一括書込み関数です。
+ </summary>
+	<param name="inp">"D0",1423,"D123",6363....といった形式で指定してください(可変個数引数)</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceRandom2ArrayBIT(System.Int32,System.Object[0:,0:])">
+	<summary>
+ ビット単位のランダム一括書込み関数です。
+ </summary>
+	<param name="k">書込み指定点数</param>
+	<param name="a">n行2列のObject配列("D0"などデバイス名、123など数値がそれぞれ各列に入った)</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceRandom2ArrayBIT(System.Int32,System.Object[])">
+	<summary>
+ ワード単位のランダム一括書込み関数です。
+ </summary>
+	<param name="inp">"D0",1423,"D123",6363....といった形式で指定してください(可変個数引数)</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteRandomBlock2(System.Int32,System.Object[])">
+	<summary>
+ ワード単位のブロック一括書込み関数です。
+ </summary>
+	<param name="inp">"D0",1423,"D123",6363....といった形式で指定してください(可変個数引数)</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.ReadDeviceRandom2(System.Object[])">
+	<summary>
+ ワード単位のランダム一括読込み関数です。
+ </summary>
+	<param name="inp">"D0","D123",....といった形式, またはそれが格納された配列を指定してください(可変個数引数)</param>
+	<returns>ReturnRandomWORD参照</returns>
+</member><member name="P:SimpleMC.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:SimpleMC.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:SimpleMC.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:SimpleMC.SimpleMC.ReturnBasic._Connected">
+	<summary>
+ 通信成功の通知です。ただし、(ユニットやCPUの)機器異常も通信成功に含まれますので
+ 命令実行の可否（書込みや読込がなされたかどうか）については、FinishedがたったあとDataOKをみてください。
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ReturnBasic._DataOK">
+	<summary>
+ 通信が成功しかつ命令実行も成功したことの通知です。
+ 通信関数を実行したら、Finishedが立つまでWaitし、その後にこれを条件にし次に遷移する
+ プログラムにすると、通信タイミングの差異による意図しない変数へのデータ格納を防げます。
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ReturnBasic._Status">
+	<summary>
+ 1:Read系命令における通信およびデータ取得成功のステータスです。
+ 2:Write系命令における通信およびデータ書込成功のステータスです。
+ 3:Socket通信自体は成功したが、ユニット等の異常により正常なデータが返せないステータスです。
+ 4:通信失敗
+ </summary>
+</member><member name="F:SimpleMC.SimpleMC.ReturnBasic._Finished">
+	<summary>
+  通信成功の可否に関わらず(タイムアウト時など), 通信実施後にTrueとして通知するフラグです。
+ 本DLLでは通信関数を複数同時実行できる代わりに, 同一変数に連続して通信関数の戻り値を格納するときは
+ 必ずしも順序に格納されるわけではないため, Finishedフラグを使って「待ち」を入れてください。
+ </summary>
+</member><member name="T:SimpleMC.SimpleMC.ReturnBasic">
+  【Connected】ソケット通信成功の可否, 【DataOK】通信が成功しかつ命令実行の成功の可否
+ 【Finished】通信実施（成功、失敗関わらず）の通知
+ 【Status】1:読込命令時の通信成功 2:書込み時の通信成功, 3:通信機器異常通知, 4:通信失敗
+
+</member><member name="T:SimpleMC.SimpleMC.ReturnWORD">
+	<summary>
+  【Connected】ソケット通信成功の可否, 【DataOK】通信が成功しかつ命令実行の成功の可否
+ 【Finished】通信実施（成功、失敗関わらず）の通知
+ 【Status】1:読込命令時の通信成功 2:書込み時の通信成功, 3:通信機器異常通知, 4:通信失敗
+ 【UShortArray】取得データがワード単位(UShort)で格納されています。
+ </summary>
+</member><member name="T:SimpleMC.SimpleMC.ReturnDWORD">
+	<summary>
+  【Connected】ソケット通信成功の可否, 【DataOK】通信が成功しかつ命令実行の成功の可否
+ 【Finished】通信実施（成功、失敗関わらず）の通知
+ 【Status】1:読込命令時の通信成功 2:書込み時の通信成功, 3:通信機器異常通知, 4:通信失敗
+ 【UIntegerArray】取得データがダブルワード単位(UInteger)で格納されています。
+ </summary>
+</member><member name="T:SimpleMC.SimpleMC.ReturnBIT">
+	<summary>
+  【Connected】ソケット通信成功の可否, 【DataOK】通信が成功しかつ命令実行の成功の可否
+ 【Finished】通信実施（成功、失敗関わらず）の通知
+ 【Status】1:読込命令時の通信成功 2:書込み時の通信成功, 3:通信機器異常通知, 4:通信失敗
+ 【ByteArray】各要素にビットデバイス取得データ, つまりBITのON/OFF(1,0)が格納されたByte型配列です。
+ </summary>
+</member><member name="T:SimpleMC.SimpleMC.RetrunRandomWORD">
+	<summary>
+  【Connected】ソケット通信成功の可否, 【DataOK】通信が成功しかつ命令実行の成功の可否
+ 【Finished】通信実施（成功、失敗関わらず）の通知
+ 【Status】1:読込命令時の通信成功 2:書込み時の通信成功, 3:通信機器異常通知, 4:通信失敗
+ 【ArrayObject】n行2列のObject配列であり、デバイス名(String)と対応する取得データ(UShort)が格納されています。
+ </summary>
+</member><member name="M:SimpleMC.SimpleMC.符号無16ビットデータへ変換(System.Int32)">
+	<summary>
+  【符号あり16bit整数を引数とし, UShort型に格納できる符号無し16bit整数を戻り値とする関数.】
+  Datagridviewセルからの入力を引数とし, WriteDeviceBlock2の引数の１つであるUShort型配列の, その要素に出力することを想定した関数
+ </summary>
+	<param name="input">具体例としてはDatagridViewセル値や, テキストボックス値などを想定した, Integer型値</param>
+	<returns>WriteDeviceBlock2の引数の１つであるUShort型配列の要素を想定した符号なし16bit整数のUShort値</returns>
+</member><member name="M:SimpleMC.SimpleMC.符号無16ビットデータから変換(System.UInt16)">
+	<summary>
+  【符号なし16bit整数を引数とし, Short型に格納できる符号あり16bit整数を戻り値とする関数.】
+  ReadDeviceBlock2の戻値の１つであるUShort型配列の, その要素を引数とし, DatagridViewセルへ出力することを想定した関数
+ </summary>
+	<param name="input">具体例としては, ReadBlockDevice2で受信したデータの要素を想定した, UShort型値 </param>
+	<returns>DatagridViewセルに格納されることを想定した符号あり16bit整数のShort値</returns>
+</member><member name="M:SimpleMC.SimpleMC.符号無32ビットデータへ変換(System.Int64)">
+	<summary>
+  【符号あり32bit整数を引数とし, UInt型に格納できる符号無し32bit整数を戻り値とする関数.】
+  Datagridviewセルからの入力を引数とし, WriteDeviceBlock2DWordの引数の１つであるUInteger型配列の, その要素に出力することを想定した関数
+ </summary>
+	<param name="input">具体例としては, DatagridViewセル値や, テキストボックス値などを想定したLong型値</param>
+	<returns>WriteDeviceBlock2DWordの引数の１つであるUInteger型配列の要素を想定した符号なし32bit整数のUInteger値</returns>
+</member><member name="M:SimpleMC.SimpleMC.符号無32ビットデータから変換(System.UInt32)">
+	<summary>
+  【符号なし32bit整数を引数とし, Integer型に格納できる符号あり32bit整数を戻り値とする関数.】
+  ReadDeviceBlock2DWordの戻値の１つであるUInteger型配列の, その要素を引数とし, DatagridViewセルへ出力することを想定した関数
+ </summary>
+	<param name="input">具体例としては, ReadBlockDevice2DWordで受信したデータの要素を想定した, UInteger型値 </param>
+	<returns>DatagridViewセルに格納されることを想定した符号あり32bit整数のInteger値</returns>
+</member><member name="M:SimpleMC.SimpleMC.ReadDeviceBlock2DWord(System.String,System.UInt16)">
+	<summary>
+【 "D700" などPLCワードデバイスの番号を第一引数, 第一引数で指定したPLCデバイス番号から連番にダブルワード単位でPLCからデータを読みだすデバイスのダブルワード数を第二引数とし,  読出データ配列通信結果(True/False)などが含まれるデータクラスインスタンスを戻り値とした関数】
+ </summary>
+	<param name="str">たとえば, "D700"といった文字列でレジスタを指定します</param>
+	<param name="k">読み込むダブルワードの個数を指定します。</param>
+	<returns>戻り値インスタンスのうち, 受信データReadUserData(UInteger配列)の各要素には配列番号0から順に指定デバイスに対応するダブルワードデータが順番に格納されています。</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceBlock2DWord(System.String,System.UInt32[],System.UInt16)">
+	<summary>
+【 "D700" などPLCワードデバイス番号を第一引数, 第一引数で指定したPLCデバイス番号から連番に書込みたいダブルワード単位のデータが配列番号0から順に格納された配列を第二引数, 書き込みたいPLCワードデバイスのダブルワード数を第三引数とし, 通信結果(True/False)などをデータクラスインスタンスを戻り値とした関数】
+ </summary>
+	<param name="str">たとえば, "D700",といった文字列でレジスタを指定します</param>
+	<param name="k">書込むダブルワードの個数を指定します。</param>
+	<returns>詳細はWriteReturnDataクラスの説明を参照。</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceBlock2ArrayBit(System.String,System.Byte[],System.UInt16)">
+	<summary>
+ ビット単位(ビットデバイスのみ)の一括(連番)書込み関数です(1ビット1要素の配列が入力)。
+ </summary>
+	<param name="str">たとえば, "M700"といった文字列でビットデバイスを指定します</param>
+	<param name="inputData">各ビットのON/OFF(1,0)が格納されたByte配列を指定してください(大きさk)</param>
+	<param name="k">書き込むビットの個数</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.ReadDeviceBlock2ArrayBit(System.String,System.UInt16)">
+	<summary>
+ ビット単位(ビットデバイスのみ)の一括(連番)読込み関数です(1ビット1要素の配列が戻り値)。
+ </summary>
+	<param name="str">たとえば, "M700"といった文字列でビットデバイスを指定します</param>
+	<param name="k">読み込むビットの個数</param>
+	<returns>ReadReturnDataArrayBit参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceBlock2BIT(System.String,System.UInt16[],System.UInt16)">
+	<summary>
+ ビット単位(ビットデバイスのみ)の一括(連番)書込み関数です(16ビット1要素の配列が入力)。
+ </summary>
+	<param name="str">"M0"といったPLCビットデバイス名称</param>
+	<param name="inputData">各ビットのON/OFFを16点単位のUShort値で指定してください(配列の大きさk/16の切上)</param>
+	<param name="k">ビット点数</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.WriteDeviceBlock2(System.String,System.UInt16[],System.UInt16)">
+	<summary>
+ ワード単位(ビットデバイスも対象に可)の一括(連番)書込み関数です。
+ </summary>
+	<param name="str">"D0", "M0"といったPLCデバイス名称</param>
+	<param name="inputData">ワード値(UShort値)の配列を指定してください(大きさkの配列)。</param>
+	<param name="k">ワード点数</param>
+	<returns>ReturnBasic参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.ReadDeviceBlock2BIT(System.String,System.UInt16)">
+	<summary>
+ ビット単位(ビットデバイスのみ)の一括(連番)読込み関数です(1ビット1要素の配列が戻り値)。
+ </summary>
+	<param name="str">"M0"といったPLCビットデバイス名称</param>
+	<param name="k">ビット点数</param>
+	<returns>ReturnWORD参照</returns>
+</member><member name="M:SimpleMC.SimpleMC.ReadDeviceBlock2(System.String,System.UInt16)">
+	<summary>
+ ワード単位(ビットデバイスも対象に可)の一括(連番)読込み関数です。
+ 引数は"D0"(デバイス名), 3(ワード数)の形式で指定してください。
+ 戻り値は通信ステータスを含む構造体になっています。データは ReturnWord.UshortArray に格納されています。
+ </summary>
+	<param name="str">"D0", "M0"といったPLCデバイス名称</param>
+	<param name="k">ワード点数</param>
+	<returns>ReturnWORD参照</returns>
+</member><member name="F:SimpleMC.UserSetParameter.Enum応答.正常あり">
+	<summary>
+  正常なデータが返ってきたときのステータスです。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum応答.正常なし">
+	<summary>
+  通信自体は成功しているがデータがないときのステータスです。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum応答.異常終了">
+	<summary>
+  通信自体は成功しているが機器異常があるときのステータスです。このときはErrorCodeプロパティ参照によりエラー情報をえられます。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum応答.通信不可">
+	<summary>
+  通信自体が失敗したときのステータスです。このときのデータは利用しないでください。
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.Enum応答">
+	<summary>
+  通信結果のステータスに関する列挙体です。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.マルチ管理CPU">
+	<summary>
+  CPUがマルチCPUで管理CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.マルチ1号機CPU">
+	<summary>
+  CPUがマルチCPUで1号機CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.マルチ2号機CPU">
+	<summary>
+  CPUがマルチCPUで2号機CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.マルチ3号機CPU">
+	<summary>
+  CPUがマルチCPUで3号機CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.マルチ4号機CPU">
+	<summary>
+  CPUがマルチCPUで4号機CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.二重化CPU制御系">
+	<summary>
+  CPUが二重化CPUで制御系CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.二重化CPU待機系">
+	<summary>
+  CPUが二重化CPUで待機系CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.二重化CPUA系">
+	<summary>
+  CPUが二重化CPUでA系CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.二重化CPUB系">
+	<summary>
+  CPUが二重化CPUでB系CPUに設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.二重化CCLinkIE1号機">
+	<summary>
+  CC-Link IEが二重化で1号機に設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.二重化CCLinkIE2号機">
+	<summary>
+  CC-Link IEが二重化で2号機に設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.二重化CCLinkIE制御系">
+	<summary>
+  CC-Link IEが二重化で制御系に設定されているときはこれを設定してください
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別.二重化CCLinkIE待機系">
+	<summary>
+  CC-Link IEが二重化で待機系に設定されているときはこれを設定してください
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.Enum二重化マルチCPU種別">
+	<summary>
+  二重化マルチCPU種別の設定候補(列挙体)です。通信対象がマルチCPUである場合設定してください。通信パラメタを直接設定しない場合、設定が必要です。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumPLC構成.シングルCPU単一ネットワーク内における">
+	<summary>
+ データ読書き対象がシングルCPUであり、そのCPUのスロットに装着された唯一の通信ユニットに
+ 外部機器（PCなど）と接続されている場合はPLC構成としてこれを設定します。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumPLC構成.二重化またはマルチCPU単一ネットワーク内における">
+	<summary>
+ データ読書き対象が二重化またはマルチCPUであり、そのCPUのスロットに装着された唯一の通信ユニットに
+ 外部機器（PCなど）と接続されている場合はPLC構成としてこれを設定します。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumPLC構成.マルチドロップ接続単一ネットワーク内における">
+	<summary>
+ データ読書き対象がシングルCPUであり、そのCPUのスロットに装着された唯一の通信ユニットが
+ RS232Cユニットであり、それとマルチドロップ接続で外部機器（PCなど）と接続する場合はこれを設定します。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumPLC構成.設定管理局ネットワーク中継をしている">
+	<summary>
+ 中継局(CCLinkIE, MELSECNET)を介するネットワーク上の任意の管理局/マスタユニットが装着されているスロットの
+ シングルCPUにアクセスする場合は、PLC構成としてこれを設定します。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumPLC構成.現在管理局ネットワーク中継をしている">
+	<summary>
+ 中継局(CCLinkIE, MELSECNET)を介するネットワーク上の実際に管理局として機能している管理局/マスタユニット
+ が装着されているスロットのシングルCPUにアクセスする場合は、PLC構成としてこれを設定します。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumPLC構成.シングルCPU他ネットワークの">
+	<summary>
+ ネットワーク経由の通常局, またはEthernetユニットが装着されているスロットのシングルCPU、
+ または１つのスロットに複数の通信ユニット(RS232C,MELSECNET,Ethernet,CC-LinkIE)がある場合には設定します。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumPLC構成.マルチドロップ接続他ネットワークの">
+	<summary>
+ ネットワーク経由の通常局, またはEthernetユニットが装着されているスロットにおけるRS232Cユニットと
+ マルチドロップ接続しているRS232Cユニットが装着されているスロットにあるシングルCPUとアクセスしたい場合、
+ または１つのスロットに複数の通信ユニット(RS232C,MELSECNET,Ethernet,CC-LinkIE)がある場合、その
+ スロットのRS232Cユニットとマルチドロップ接続されているRS232Cユニットが装着されているスロットにある
+ シングルCPUと接続する場合はこれを設定します。
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumPLC構成">
+	<summary>
+  PLC構成プロパティの設定候補(列挙体)です。通信対象のPLCネットワーク構成を設定してください。通信パラメタを直接設定しない場合、設定が必要です。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumMCProtocol.形式5">
+	<summary>
+  RS232C通信ユニットに形式5で通信する場合設定してください。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumMCProtocol.形式4">
+	<summary>
+  RS232C通信ユニットに形式4で通信する場合設定してください。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumMCProtocol.形式3">
+	<summary>
+  RS232C通信ユニットに形式3で通信する場合設定してください。
+   </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumMCProtocol.形式2">
+	<summary>
+  RS232C通信ユニットに形式2で通信する場合設定してください。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumMCProtocol.フレーム4E">
+	<summary>
+  Ethernetユニットに4Eフレームで通信する場合設定してください。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumMCProtocol.フレーム3E">
+	<summary>
+  Ethernetユニットに3Eフレームで通信する場合設定してください。
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumMCProtocol">
+	<summary>
+  MCProtocolプロパティの設定候補(列挙体)です。通信プロトコルを設定します。必ず設定してください。
+ 形式2-5に設定した場合はプロパティActComPort, ActDatabit, ActParity, ActStopbit,ActControl,ActSumcheck,ActBaudRateを必ず設定してください
+ また, 形式2-4については, 任意でプロパティActFrame で通信フレームを選択することもできます。
+ フレーム3E,4Eを選択した場合はプロパティActHostAddress, ActPortNumberを必ず設定してください。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumCFrame.フレーム2C">
+	<summary>
+  RS232C通信においてフレーム2Cで通信する場合設定してください(ただし形式5の場合選択不可)
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumCFrame.フレーム3C">
+	<summary>
+  RS232C通信においてフレーム3Cで通信する場合設定してください(ただし形式5の場合選択不可)
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumCFrame.フレーム4C">
+	<summary>
+  RS232C通信においてフレーム4Cで通信する場合設定してください。
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumCFrame">
+	<summary>
+ CFrameプロパティの選択候補（列挙体）。RS232通信において任意に選択するフレームです。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumBinaryASCII.ASCII">
+	<summary>
+  ASCIIでデータ送信する場合選択してください。
+ </summary>
+</member><member name="F:SimpleMC.UserSetParameter.EnumBinaryASCII.Binary">
+	<summary>
+  バイナリでデータ送信する場合選択してください。
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumBinaryASCII">
+	<summary>
+ BinaryASCIIプロパティの選択候補（列挙体）。Etherまたはシリアルの形式5のときにASCIIかバイナリか選択します。
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumBaudRate">
+	<summary>
+ ActBaudRateプロパティの選択候補（列挙体）
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumDatabits">
+	<summary>
+ ActDatabitsプロパティの選択候補（列挙体）
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumStopbits">
+	<summary>
+ ActStopbitsプロパティの選択候補（列挙体）
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumParity">
+	<summary>
+ ActParityプロパティの選択候補（列挙体）
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumHandShake">
+	<summary>
+ HandShakeプロパティの選択候補（列挙体）
+ </summary>
+</member><member name="T:SimpleMC.UserSetParameter.EnumQiQ">
+	<summary>
+ QiQプロパティの選択候補（列挙体）
+ </summary>
+</member>
+</members>
+</doc>

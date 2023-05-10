@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <PublishUrlHistory>InstallerMake\|\InstallerMake\|C:\Users\a\Desktop\20210613QEther-Serial-ver2.21-Monitor\EtherForm\InstallerMake\|C:\Users\a\Desktop\新しいフォルダー\|C:\Users\yuki\Desktop\aaaa\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory>C:\Users\a\Desktop\20210613QEther-Serial-ver2.21-Monitor\EtherForm\InstallerMake</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory />
+    <FallbackCulture>ja-JP</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>
