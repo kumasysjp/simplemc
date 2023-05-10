@@ -4,6 +4,10 @@ the MC protocol communication library “Simple MC” may be an alternative to M
 provided by Mitsubishi that allows communication between a PC and a MELSEC PLC Q without using MX Component.
 
 
+※1. MC Protocol(MCプロトコル):MELSEC Communication Protocol.
+
+
+
 ## 内容物
 - "SimpleMC.dll" (要 .NET4.5互換 Runtime.  .NET DLL)
 - Sample Application Project
