@@ -8,6 +8,9 @@ provided by Mitsubishi that allows communication between a PC and a MELSEC PLC Q
 - "SimpleMC.dll" (要 .NET4.5互換 Runtime.  .NET DLL)
 - Sample Application Project
 
+## 機能
+
+- a
 
 ## 利用方法
 
